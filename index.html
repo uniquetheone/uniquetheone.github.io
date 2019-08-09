@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嘉创智能一体机</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <style>
+        .index{
+            position: relative;
+        } 
+
+        .btn_1{
+            position: absolute;
+            top: 28%;
+            height: 4%;
+            left: 20%;
+            width: 57%;
+            z-index: 2;
+        }
+        .btn_2{
+            position: absolute;
+            top: 81%;
+            height: 4%;
+            left: 20%;
+            width: 57%;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+<div class="index">
+    <img src="./images/20190808.jpg"/>
+    <div class="btn_1" onclick=""></div>
+    <div class="btn_2" onclick=""></div>
+</div>
+<script>
+
+    var url = "https://detail.youzan.com/show/goods?alias=2xgk5ogmftkur&from=wxd&kdtfrom=wxd&alias=2xgk5ogmftkur";
+
+    document.querySelector(".btn_1").onclick = function (e) {
+        window.location.href = url;
+		MtaH5.clickStat('BtnClick');
+    };
+    document.querySelector(".btn_2").onclick = function (e) {
+        window.location.href = url;
+		MtaH5.clickStat('BtnClick');
+    };
+</script>
+
+<script>
+  	var _mtac = {"performanceMonitor":1,"senseQuery":1};
+  	(function() {
+  		var mta = document.createElement("script");
+  		mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+  		mta.setAttribute("name", "MTAH5");
+  		mta.setAttribute("sid", "500602890");
+  		mta.setAttribute("cid", "500602891");
+  		var s = document.getElementsByTagName("script")[0];
+  		s.parentNode.insertBefore(mta, s);
+  	})();
+</script>
+</body>
+</html>
